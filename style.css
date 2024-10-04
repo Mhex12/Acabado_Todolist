@@ -1,0 +1,160 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;   
+    align-items: center;      
+    height: auto;     
+    background-image: url('C:/Users/HP/Documents/My Projects/Acabado_Melky_T_BSIT4D_DO LIST/bg 5.jpg');        
+}
+
+h1 {
+    text-align: center;        
+    margin: 20px 0;          
+    font-size: 2rem;         
+    background-color: white;  
+    padding: 10px 20px;       
+    border-radius: 25px;      
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+    align-items: center;
+}
+
+.collage-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr; 
+    grid-template-rows: 1fr 1fr;    
+    gap: 20px;
+    max-width: 800px; 
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0px; 
+}
+
+/* Styling for each box */
+.box {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    align-items: center;
+    border-radius: 20px; 
+}
+
+/* Task Submission Box */
+.task-submission-box {
+    grid-column: 1 / 2; /* First column */
+    grid-row: 1 / 2;    /* First row */
+    height: 300px;
+    margin-bottom: 0px;
+}
+
+/* Task List Box */
+.task-list-box {
+    grid-column: 1 / 2; 
+    grid-row: 2 / 3;    
+    grid-column-gap: 0px;
+    height: 300px;      
+    overflow-y: auto;   
+    margin-top: 0px;
+}
+
+/* Quote Box */
+.quote-box {
+    grid-column: 2 / 3; 
+    grid-row: 1 / 2;    
+}
+
+/* Date Box */
+.date-box {
+    grid-column: 2 / 3; 
+    grid-row: 2 / 3;   
+}
+
+/* Form and Inputs Styling */
+form {
+    margin-bottom: 20px;
+}
+
+input[type="text"], input[type="date"], button {
+    padding: 10px;
+    margin: 5px 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Task List Styling */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; 
+    width: 100%; 
+}
+
+/* Task List Items */
+li {
+    background-color: #eee;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    border-radius: 20px;
+    font-style: italic; 
+}
+
+/* Task Text Styling */
+.task-text {
+    flex-grow: 1;
+    text-align: left; 
+    overflow-wrap: break-word; 
+    word-wrap: break-word; 
+    max-width: 70%; 
+    margin-right: 10px; 
+}
+
+/* Task Buttons */
+.task-buttons {
+    display: flex; 
+    gap: 5px; 
+}
+
+/* Buttons Styling */
+button {
+    background-color: #77b1d4;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px; 
+    border-radius: 20px; 
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #90d5ff; 
+}
+
+/* Quote and Date Box Text */
+.quote-box p, .date-box p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Date Box Specific Styling */
+#current-week-day {
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#current-date-display {
+    font-size: 5rem;
+    font-weight: bold;
+    margin: 10px 0;
+}

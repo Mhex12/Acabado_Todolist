@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Your To Do List</h1> <!-- Title placed outside the collage container -->
+    <div class="collage-container">
+        <!-- Task Submission Box -->
+        <div class="box task-submission-box">
+            <h2>What's on your mind?</h2>
+            <form id="task-submission-form">
+                <input type="text" id="task-input-field" placeholder="Enter your task" required>
+                <input type="date" id="due-date-input" required>
+                <button type="submit">Add Task</button>
+            </form>
+        </div>
+
+        <!-- Quote Box -->
+        <div class="box quote-box">
+            <h2>Quotes</h2>
+            <p id="displayed-quote">Hi! How is your day?</p>
+            <input type="text" id="quote-input-field" placeholder="Enter your quote">
+            <button id="submit-quote-button">Add Quote</button>
+        </div>
+
+        <!-- Task List Box -->
+        <div class="box task-list-box">
+            <h2>Your Tasks</h2>
+            <ul id="task-list"></ul>
+        </div>
+
+        <!-- Date Box -->
+        <div class="box date-box">
+            <h2 id="current-week-day">DAY</h2>
+            <h1 id="current-date-display">DATE</h1>
+            <p id="current-task-status">No task for today</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
